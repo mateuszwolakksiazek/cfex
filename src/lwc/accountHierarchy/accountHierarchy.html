@@ -1,0 +1,16 @@
+<template>
+    <!-- account hierarchy tree panel -->
+    <div if:true={items} class="slds-p-around_medium">
+        <lightning-tree items={items} header={label.header.name}></lightning-tree>
+    </div>
+    <!-- spinner -->
+    <div if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+    </div>
+    <!-- error message panel -->
+    <div if:true={error}>
+        <p class="slds-text-color_destructive">
+            {error.message}
+        </p>
+    </div>
+</template>
