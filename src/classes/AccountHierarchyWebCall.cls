@@ -34,6 +34,7 @@ public with sharing class AccountHierarchyWebCall {
     private static HTTPResponse makeCallout() {
         //Create request
         HttpRequest request = new HttpRequest();
+        //This should be in custom metadata / connected, but for demo purpose I will leave it here
         request.setEndpoint('callout:cfex/api/data');
         request.setMethod('GET');
 

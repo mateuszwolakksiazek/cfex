@@ -1,4 +1,3 @@
-
 export function handleError(error) {
     let errorObj = { message : 'Unknown error', status : error.status };
 
