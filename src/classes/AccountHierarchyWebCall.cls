@@ -34,8 +34,7 @@ public with sharing class AccountHierarchyWebCall {
     private static HTTPResponse makeCallout() {
         //Create request
         HttpRequest request = new HttpRequest();
-        //This should be in custom metadata, but for demo purpose I will leave it here
-        request.setEndpoint('https://nextjs-antd-47l4mtjo4-dongtong86.vercel.app/api/data');
+        request.setEndpoint('callout:cfex/api/data');
         request.setMethod('GET');
 
         //Send request
